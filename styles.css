@@ -148,10 +148,13 @@ button {
 }
 
 #histories {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
 
 .card {
   width: 100%;
@@ -189,7 +192,12 @@ button {
     width: 100%;
   }
 
+  #histories {
+    grid-template-columns: 1fr;
+  }
+
   .card {
     flex-direction: column;
   }
+
 }
